@@ -17,7 +17,7 @@ I'm passionate about cybersecurity and over the past 2 years I have honed my ski
 
 If you want to see the Proof of Concept (PoC) of the vulnerabilities, please visit the separate repositories:
 
-- [CVE-2024-42718 - PoC](https://github.com/jacopo1223/jacopo.github/tree/main/cve-2024-42718)
+- [CVE-2024-42718 - PoC](https://github.com/jacopo1223/jacopo.github/tree/main/CVE-2024-42718)
 - **CVE-2024-44065 - PoC**: The PoC will be published soon.
 
 ## Contacts.
