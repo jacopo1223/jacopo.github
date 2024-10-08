@@ -9,7 +9,7 @@ I'm passionate about cybersecurity and over the past 2 years I have honed my ski
 
 ## CVEs reported
 
-1. **CVE-2024-42718**: **Path Traversal** vulnerability that allows access to sensitive files through unsanitized input on a specific web application. [Dettagli](https://github.com/jacopo1223/cve-2024-42718)
+1. **CVE-2024-42718**: **Path Traversal** vulnerability that allows access to sensitive files through unsanitized input on a specific web application. 
    
 2. **CVE-2024-44065**: This vulnerability is still being disclosed. Details and Proof of Concept (PoC) will be published soon. Stay tuned!!!
 
