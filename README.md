@@ -1,9 +1,9 @@
 # Welcome to my GitHub Pages
 
-Hello!!! My name is **Jacopo** and I have been working for 2 years in the **cyber security** world. I am a **Junior Pentester** and I mainly work on penetration testing on **web** and **mobile** applications. In this repository you will find a detailed description of my work, including the vulnerabilities (CVEs) I have discovered and the respective Proof of Concept (PoC).
+Hello!!! My name is **Jacopo** and I have been working for 2 years in the **cyber security** world. I'm a **Junior Pentester** and I mainly work on penetration testing on **web** and **mobile** applications. In this repository you will find a detailed description of my work, including the vulnerabilities (CVEs) I have discovered and the respective Proof of Concept (PoC).
 
 ## About me
-I am passionate about cybersecurity and over the past 2 years I have honed my skills in identifying vulnerabilities on web and mobile platforms. This repository collects the results of my findings, including references to CVEs I have reported.
+I'm passionate about cybersecurity and over the past 2 years I have honed my skills in identifying vulnerabilities on web and mobile platforms. This repository collects the results of my findings, including references to CVEs I have reported.
 
 
 
