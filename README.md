@@ -23,4 +23,4 @@ If you want to see the Proof of Concept (PoC) of the vulnerabilities, please vis
 ## Contacts.
 
 - [GitHub](https://github.com/jacopo1223)
-- [LinkedIn](https://linkedin.com/in/jacopo1223)
+- [LinkedIn](https://www.linkedin.com/in/jacopo-romani-77a604204/)
