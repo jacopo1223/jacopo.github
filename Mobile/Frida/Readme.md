@@ -12,3 +12,13 @@ After running these commands, you can check that **Frida** is correctly installe
 **frida --version**
 
 ![Login Screenshot](https://github.com/jacopo1223/jacopo.github/blob/main/Mobile/Frida/frida.png?raw=true)
+
+
+# How to install Frida on device Android
+
+# Step 1: Enable Developer Mode on the Android Device
+Open the Settings of your Android device.
+Scroll down and select About Phone (or similar, depending on your device).
+Find the item Build Number.
+Tap Build Number seven times to unlock the Developer Options.
+Go back to the Settings menu, where you will see a new option called Developer Options
