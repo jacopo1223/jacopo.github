@@ -43,8 +43,11 @@ The attacker could manipulate the URL by adding a commonly cacheable extension s
 Server response:
 
 HTTP/1.1 200 OK
+
 Content-Type: text/html
+
 Cache-Control: public, max-age=3600
+
 Cf-Cache-Status: **HIT**
 
  the origin server might treat the URL **/user/123/profile.js** as if it were a normal request for user profile 123, ignoring the .js extension. However, the caching system might interpret the URL as a static resource (a .js file) and decide to cache the response
