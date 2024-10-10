@@ -6,8 +6,9 @@ By manipulating the URL, the attacker can trick the cache system and force the c
 Here is a concrete example of how a discrepancy in path mapping within a web app can be exploited to perform a Web Cache Deception attack. Suppose we have a web app with an area reserved for user profiles
 
 The authenticated user can access their profile page via the following URL:
-**GET /user/123/profile HTTP/1.1
-Host: www.example.com**
+**GET /user/123/profile HTTP/1.1**
+
+**Host: www.example.com**
 
 Server response:
 
@@ -18,7 +19,7 @@ Cf-Cache-Status: BYPASS
 
 <html>
 <body>
-<h1>Profilo di Jacopo</h1>
+Profilo di Jacopo
 <p>Email: jacopo@example.com</p>
 <p>Indirizzo: xxxxx</p>
 </body>
