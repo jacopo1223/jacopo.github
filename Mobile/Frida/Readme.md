@@ -11,3 +11,4 @@ After running these commands, you can check that **Frida** is correctly installe
 
 **frida --version**
 
+![Login Screenshot](https://github.com/jacopo1223/jacopo.github/blob/main/CVE-2024-42718/login.png?raw=true)
