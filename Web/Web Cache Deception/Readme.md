@@ -6,6 +6,7 @@ By manipulating the URL, the attacker can trick the cache system and force the c
 Here is a concrete example of how a discrepancy in path mapping within a web app can be exploited to perform a Web Cache Deception attack. Suppose we have a web app with an area reserved for user profiles
 
 The authenticated user can access their profile page via the following URL:
+
 **GET /user/123/profile HTTP/1.1**
 
 **Host: www.example.com**
@@ -46,8 +47,9 @@ Cf-Cache-Status: **HIT**
 
 At this point, any user (authenticated or not) accessing the same manipulated URL in incognito mode or from another device will get the response cached with the sensitive profile data of user 123
 
-**GET /user/123/profile.js HTTP/1.1
-Host: www.example.com**
+**GET /user/123/profile.js HTTP/1.1**
+
+**Host: www.example.com**
 
 # Recommendations:
 Disable caching for sensitive content: Correctly set cache headers, such as Cache-Control: no-store, for all sensitive resources and pages requiring authentication.
