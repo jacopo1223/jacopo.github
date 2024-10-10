@@ -14,9 +14,13 @@ The authenticated user can access their profile page via the following URL:
 Server response:
 
 HTTP/1.1 200 OK
+
 Content-Type: text/html
+
 Cache-Control: no-store
+
 Cf-Cache-Status: BYPASS
+
 
 <html>
 <body>
@@ -32,8 +36,9 @@ In this case, the server correctly returns the profile information of authentica
 
 The attacker could manipulate the URL by adding a commonly cacheable extension such as .js, thereby tricking the cache system into storing the response
 
-**GET /user/123/profile.js HTTP/1.1
-Host: www.example.com**
+**GET /user/123/profile.js HTTP/1.1**
+
+**Host: www.example.com**
 
 Server response:
 
