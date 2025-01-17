@@ -3,6 +3,7 @@
 As a first step, we have the ip address of the machine where we will perform an nmap scanning
 
 nmap -sV -sC -Pn 52.52.110.46
+![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/write%20up.png)
 
 we go inside 52.52.110.46:80 and go to the upload section
 
