@@ -110,8 +110,10 @@ The - symbol at the end of the command indicates that you want to display the co
 If you prefer to save the file locally, you can do so:
 `aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt /path/to/local/flag.txt`
 
+naturally replace /path/to/local with the path you wish to save the file.
+
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup10.png)
 
-naturally replace /path/to/local with the path you wish to save the file.
+
 
 # FLAG FOUND!!!
