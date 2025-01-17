@@ -25,6 +25,7 @@ The XML payload can be constructed as follows:
 <svg>
   <text>&xxe;</text>
 </svg>
+```
 
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/write%20up4.png)
 This code injects the contents of /proc/self/environ (which includes environment variables) into an SVG document. The XXE vulnerability allows you to extract sensitive information, such as AWS access keys, session tokens and other environment variables.
