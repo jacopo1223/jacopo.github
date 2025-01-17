@@ -54,15 +54,15 @@ AWS credentials beginning with AKIA indicate long-term keys, while those beginni
 To obtain AWS entity information, run the following command:
 
 
-aws sts get-caller-identity
+`aws sts get-caller-identity`
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup8.png)
 If you already know the name of the role, you can obtain the details of the role using the command:
 
-aws iam get-role --role-name S3PutObjectRole
+`aws iam get-role --role-name S3PutObjectRole`
 
 
 This command returns the JSON output shown below and the role description refers to a new bucket named logistics-processing bucket. 
-{
+`{
     "Role": {
         "Path": "/",
         "RoleName": "S3PutObjectRole",
@@ -88,14 +88,14 @@ This command returns the JSON output shown below and the role description refers
             "Region": "us-west-1"
         }
     }
-}
+}`
 
 This reveals a SQLite database called data-service.sqlite . 
 SQLite is a popular and easy-to-use relational database system that developers often incorporate into their applications.
 
 To see the files contained in the huge-logistics-processing bucket, use the command:
 
-aws s3 ls huge-logistics-processing --recursive --human-readable --summarize
+`aws s3 ls huge-logistics-processing --recursive --human-readable --summarize`
 
 This command will list all the files in the bucket, showing their size in a readable format and a summary of the information.
 
@@ -103,12 +103,12 @@ In the bucket there is a file called flag.txt, you can retrieve it with the comm
 
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup9.png)
 
- aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt -
+ `aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt -`
 
 The - symbol at the end of the command indicates that you want to display the contents of the file directly in the terminal, instead of copying it to a local file
 
 If you prefer to save the file locally, you can do so:
-aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt /path/to/local/flag.txt
+`aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt /path/to/local/flag.txt`
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup10.png)
 naturally replace /path/to/local with the path you wish to save the file.
 
