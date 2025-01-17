@@ -34,12 +34,11 @@ export AWS_ACCESS_KEY_ID="<access_key>"
 
 export AWS_SECRET_ACCESS_KEY="<secret_key>"
 
-export AWS_SESSION_TOKEN="<token>"
+export AWS_SESSION_TOKEN="<secret_token>"
 
 # ATTENTION
 
-Important Notes:
-![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup6.png)
+Important Notes:![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup6.png)
 Be sure to exclude the SHLVL parameter, as it may interfere with AWS credentials.
 AWS session tokens are base64 encoded, so be sure to copy the entire token, including the final = or == characters.
 AWS credentials beginning with AKIA indicate long-term keys, while those beginning with ASIA are temporary session keys that require a session token.
