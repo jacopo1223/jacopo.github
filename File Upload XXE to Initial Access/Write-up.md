@@ -85,6 +85,7 @@ This command returns the JSON output shown below and the role description refers
         }
     }
 }
+
 This reveals a SQLite database called data-service.sqlite . 
 SQLite is a popular and easy-to-use relational database system that developers often incorporate into their applications.
 
