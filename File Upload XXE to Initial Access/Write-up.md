@@ -5,7 +5,9 @@ As a first step, we have the ip address of the machine where we will perform an 
 nmap -sV -sC -Pn 52.52.110.46
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/write%20up.png)
 
-we go inside 52.52.110.46:80 and go to the upload section
+we go inside 52.52.110.46:80 
+![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/write%20up2.png)
+and go to the upload section
 
 where we can insert documents or PDF,SVG,PNG,DOC
 Now let's try inserting a PDF file 
