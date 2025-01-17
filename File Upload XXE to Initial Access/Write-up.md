@@ -38,7 +38,11 @@ export AWS_SESSION_TOKEN="<secret_token>"
 
 # ATTENTION
 
-Important Notes:![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup6.png)
+Important Notes:
+
+![Schermata XXE]
+(https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup6.png)
+
 Be sure to exclude the SHLVL parameter, as it may interfere with AWS credentials.
 AWS session tokens are base64 encoded, so be sure to copy the entire token, including the final = or == characters.
 AWS credentials beginning with AKIA indicate long-term keys, while those beginning with ASIA are temporary session keys that require a session token.
@@ -82,15 +86,19 @@ This command returns the JSON output shown below and the role description refers
         }
     }
 }
-This reveals a SQLite database called data-service.sqlite . SQLite is a popular and easy-to-use relational database system that developers often incorporate into their applications.
+This reveals a SQLite database called data-service.sqlite . 
+SQLite is a popular and easy-to-use relational database system that developers often incorporate into their applications.
 
 To see the files contained in the huge-logistics-processing bucket, use the command:
 
 aws s3 ls huge-logistics-processing --recursive --human-readable --summarize
+
 This command will list all the files in the bucket, showing their size in a readable format and a summary of the information.
 
 In the bucket there is a file called flag.txt, you can retrieve it with the command:
+
 ![Schermata XXE](https://github.com/jacopo1223/jacopo.github/blob/main/File%20Upload%20XXE%20to%20Initial%20Access/writeup9.png)
+
  aws s3 cp s3://huge-logistics-processing/TEMP-IT/flag.txt -
 
 The - symbol at the end of the command indicates that you want to display the contents of the file directly in the terminal, instead of copying it to a local file
